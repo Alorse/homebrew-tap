@@ -5,21 +5,21 @@
 class TradingCli < Formula
   desc "Technical analysis and trading tools CLI"
   homepage "https://github.com/alorse/trading-cli"
-  version "0.1.5"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alorse/trading-cli/releases/download/v0.1.5/trading-cli_0.1.5_Darwin_x86_64.tar.gz"
-      sha256 "9b8f80c304b9d2a22d952d8b7b708c5c64152ed62769962c8462e47755904b7c"
+      url "https://github.com/alorse/trading-cli/releases/download/v0.2.0/trading-cli_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "e379912bdbfb5f59ccefce4e99a6a1a8e54a0675faf402154d72a212e09bfd59"
 
       define_method(:install) do
         bin.install "trading-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alorse/trading-cli/releases/download/v0.1.5/trading-cli_0.1.5_Darwin_arm64.tar.gz"
-      sha256 "d08d314ec093b38d019b5f1ac1a809a030c3c325893f4aa196cf80f7572b1db1"
+      url "https://github.com/alorse/trading-cli/releases/download/v0.2.0/trading-cli_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "e88684af02ac95b94ca66db0340d348df600755b2e9a8531c6182cbe9336e462"
 
       define_method(:install) do
         bin.install "trading-cli"
@@ -29,15 +29,15 @@ class TradingCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alorse/trading-cli/releases/download/v0.1.5/trading-cli_0.1.5_Linux_x86_64.tar.gz"
-      sha256 "96c46ea817f6e4844e36e0e916d4af0a7c97ac7e26c05365bd89632b04372473"
+      url "https://github.com/alorse/trading-cli/releases/download/v0.2.0/trading-cli_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "0bfe715124c2b3a43ce001e747574714c4bf0a8e99df9b7f8b0cd2769934c701"
       define_method(:install) do
         bin.install "trading-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alorse/trading-cli/releases/download/v0.1.5/trading-cli_0.1.5_Linux_arm64.tar.gz"
-      sha256 "dd173d9c263e326fcb0f7bb671582caafe25ac2746852f7eafa5c867ed526a50"
+      url "https://github.com/alorse/trading-cli/releases/download/v0.2.0/trading-cli_0.2.0_Linux_arm64.tar.gz"
+      sha256 "7ac498910f4335201f904febf93c20aa7fddf491747f61a821b81ad8b83cb58c"
       define_method(:install) do
         bin.install "trading-cli"
       end
